@@ -4,16 +4,15 @@ import com.aventstack.extentreports.Status;
 import io.rasologg.restassured.extentreports.ExtentTestManager;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
-
-import static org.apache.log4j.Logger.getLogger;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static io.restassured.RestAssured.given;
 
 public class RestAssuredExample extends RestAssuredBase {
 
-    Logger logger = getLogger(RestAssuredExample.class);
+    Logger logger = LogManager.getLogger(RestAssuredExample.class);
 
     @Test
     public void whenGetEmplyeesThenSuccess(){

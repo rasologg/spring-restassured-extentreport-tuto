@@ -2,7 +2,6 @@ package io.rasologg.restassured.extentreports;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.reporter.ExtentReporter;
 
 import java.util.HashMap;
 import java.util.Map;
